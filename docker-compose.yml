@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  frontend:
+    build:
+      context: ./frontend/client
+    volumes:
+      - './frontend/client/:/react_app'
+      -  '/react_app/node_modules'
+    ports:
+      - 3000:3000
+    command:  npm start
