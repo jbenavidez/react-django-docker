@@ -2,7 +2,7 @@ import useFetch from "../hooks/useFetch"
 
 export default function Services() {
     const {data, isPending, error}= useFetch('http://localhost:8000/api/services/')
-    console.log("init_services..." , data)
+
     return (
         <div className="container">
    {!isPending  && 

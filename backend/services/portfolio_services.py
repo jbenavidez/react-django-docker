@@ -8,36 +8,37 @@ class PortfolioServices:
         portfolio_list =  [{
                     "name":"Threads",
                     "description":"Illustration",
+                 
+                    "img_url":"/img/portfolio/1.jpg",
                     "id":1,
-                     "img_url":"/img/portfolio/1.jpg",
                     },{
                     "name":"Explore",
-                    "description":"Graphic Design",
-                    "id":2,
+                    "description":"Graphic Design",                   
                      "img_url":"/img/portfolio/2.jpg",
+                     "id":2,
                     },
                     {
                     "name":"Finish",
-                    "description":"Identity",
-                    "id":3,
+                    "description":"Identity",                  
                      "img_url":"/img/portfolio/3.jpg",
+                      "id":3,
                     },
                     {
                     "name":"Lines",
-                    "description":"Branding",
-                    "id":4,
+                    "description":"Branding",                   
                      "img_url":"/img/portfolio/4.jpg",
+                      "id":4,
                     }, {
                     "name":"Southwest",
-                    "description":"Website Design",
-                    "id":5,
+                    "description":"Website Design",                   
                      "img_url":"/img/portfolio/5.jpg",
+                     "id":5,
                     },
                      {
                     "name":"Window",
                     "product_description":"Photography",
-                    "id":6,
                      "img_url":"/img/portfolio/6.jpg",
+                     "id":6,
                     },
                   
                   

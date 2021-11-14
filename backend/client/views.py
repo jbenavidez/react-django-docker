@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from services.products_services import ProductServices
 from services.portfolio_services import PortfolioServices
 from services.book_service  import BookServices
- 
+from services.team_services import TeamServices
 
 @api_view(['GET', 'POST'])
 def book_list(request):
@@ -26,4 +26,12 @@ def portfolio_list(request):
     """This API return a portfolio"""
     if request.method == 'GET':
         data = PortfolioServices.get_portfolio_list()
+        return Response(data)
+
+
+@api_view(['GET', 'POST'])
+def team(request):
+    """This API return a list of team members"""
+    if request.method == 'GET':
+        data = TeamServices.get_team_list()
         return Response(data)
