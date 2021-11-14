@@ -2,7 +2,6 @@ import useFetch from "../hooks/useFetch"
 
 export default function Team() {
     const {data, isPending, error}= useFetch('http://localhost:8000/api/team/')
-    console.log("init_team " , data)
     return (
         <div>
             <div className="container">

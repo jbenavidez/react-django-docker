@@ -5,6 +5,9 @@ from services.products_services import ProductServices
 from services.portfolio_services import PortfolioServices
 from services.book_service  import BookServices
 from services.team_services import TeamServices
+from services.about_services import AboutServices
+
+
 
 @api_view(['GET', 'POST'])
 def book_list(request):
@@ -34,4 +37,11 @@ def team(request):
     """This API return a list of team members"""
     if request.method == 'GET':
         data = TeamServices.get_team_list()
+        return Response(data)
+
+@api_view(['GET', 'POST'])
+def about(request):
+    """This API return a services """
+    if request.method == 'GET':
+        data = AboutServices.get_about_list()
         return Response(data)

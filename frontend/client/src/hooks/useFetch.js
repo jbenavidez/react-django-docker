@@ -29,6 +29,7 @@ const useFetch = (url)=>{
                 setError(null);
               })
               .catch((e) =>{
+                setData([]);
                   if(e.name ==='AbortError'){
                     console.log('fetch aborted')
                   }
