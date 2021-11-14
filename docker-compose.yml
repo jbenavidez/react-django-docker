@@ -10,6 +10,7 @@ services:
     volumes:
       - ./backend/:/django_app
     command: python manage.py runserver 0.0.0.0:8000
+    
   frontend:
     build:
       context: ./frontend/client
