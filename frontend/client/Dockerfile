@@ -7,6 +7,6 @@ COPY package-lock.json /react_app
 
 RUN npm install
 
-COPY . .
+COPY . /react_app
 
 CMD ["npm", "start"]
