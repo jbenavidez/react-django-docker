@@ -9,7 +9,6 @@ This application display the services, portfolio, about, and team information ab
 <li>The back-end of this app is builded on Django. Django will prepare the data to server to the front-end. </li>
 <li>The front-end of this app is builed on React, React will digest end-points to display the company information. <li>
 <li> Docker is being used to package the front-end, back-end,nginx  into containers</li>
- 
 </ul>
 
 
@@ -68,11 +67,11 @@ $ docker-compose -f docker-compose-prod.yml  Up
 </ul>
 
 
-### On production, the front-end is not longer being serve on port 3000; nginx is being use to manage the traffic
+### On production, the front-end is not longer being serve on port 3000; nginx is being used to manage the traffic
 ![Alt text](frontend/client/src/assets/prod_front.png "Home" )
 
 
-### On production, the back-end is not longer being serve on port 8000; nginx is being use to manage the traffic
+### On production, the back-end is not longer being serve on port 8000; nginx is being used to manage the traffic
 ![Alt text](frontend/client/src/assets/prod_back.png "Home" )
 
 
