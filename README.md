@@ -7,12 +7,12 @@ This application  was created using Django,Reat. and Docker
 # App Concepts
 <ul>
 <li>The back-end of this app is builded on Django. The following endpoints are using by React to pupolate the front-end:
-    <ul>
+    <ol>
     <li>/api/services/<li>
     <li>/api/portfolio/<li>
     <li>/api/team/<li>
     <li>/api/about/<li>
-    </ul>
+    </ol>
 </li>
 <li>The front-end of this app is builed on React <li>
 <li> Docker is being use to package the front-end, back-end,nginx  into containers
@@ -53,18 +53,11 @@ $ docker-compose -f docker-compose-dev.yml  Up
 </li>
 </ul>
 # Result
-<ul>
-<li>
-    <span>The fron-end run on port 3000. Ex: http://localhost:3000/ </span>
- ![Alt text](src/assets/dev_front.png "Homagepe" )
-</li>
 
-<li>
-    <span>The back-end run on port 8000. Ex: http://localhost:8000/ </span>
- ![Alt text](src/assets/dev_front.png "Homagepe" )
-</li>
+### The fron-end run on port 3000. Ex: http://localhost:3000/
+![Alt text](src/assets/homepage.png "Home" )
+
  
-</ul>
 
  
 
@@ -84,3 +77,4 @@ Download the app and Run
 ```bash
 $ python manage.py runserver
 ```
+ 
