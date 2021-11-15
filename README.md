@@ -6,8 +6,8 @@ This application display the services, portfolio, about, and team information ab
 
 # App Concepts
 <ul>
-<li>The back-end of this app is builded on Django. Django will prepare the data to server to the front-end.</li>
-<li>The front-end of this app is builed on React, React will digest end-points to display the company information.  </li>
+<li>The back-end of this app is builded on Django. Django will prepare the data to and send it to the front-end.</li>
+<li>The front-end of this app is builed on React, React will digest end-points  to display the company information.  </li>
 <li> Docker is being used to package the front-end, back-end,nginx  into containers </li>
 </ul>
 
