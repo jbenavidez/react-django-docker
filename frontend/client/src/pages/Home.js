@@ -21,11 +21,11 @@ export default function Home() {
            <About/>
         </section>
          {/* Team  */}
-         <section    class="page-section bg-light" id="team">
+         <section    className="page-section bg-light" id="team">
            <Team/>
         </section>
          {/* Clients  */}
-         <div class="py-5">
+         <div className="py-5">
          <Clients/>
          </div>
      </div>

@@ -1,7 +1,7 @@
 import useFetch from "../hooks/useFetch"
 
 export default function Team() {
-    const {data, isPending, error}= useFetch('http://localhost:8000/api/team/')
+    const {data, isPending, error}= useFetch('/api/team/')
     return (
         <div>
             <div className="container">
@@ -15,7 +15,7 @@ export default function Team() {
                     {
                     data.map((item , index) =>(
                     <div className="col-lg-4">
-                        <div className="team-member"  key={item.id}>
+                        <div className="team-member"  key={index}>
                         <img className="mx-auto rounded-circle" src= { item.img_url}   alt="..." />
                         <h4>{ item.name} </h4>
                         <p className="text-muted">   { item.title} </p>

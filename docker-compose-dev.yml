@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  backend:
+  backend-dev:
     image: django_backend
     build:
       context: ./backend
@@ -12,13 +12,16 @@ services:
       - ./backend/:/django_app
     command: python manage.py runserver 0.0.0.0:8000
     
-  frontend:
+  frontend-dev:
     image: react_frontend
     build:
       context: ./frontend/client
+      args:
+        base_url: http://localhost:8000
     volumes:
       - './frontend/client/:/react_app'
       -  '/react_app/node_modules'
     ports:
       - 3000:3000
+
     command:  npm start

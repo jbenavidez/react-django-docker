@@ -9,10 +9,15 @@ services:
     volumes:
       - static-data:/vol/web
 
-  # frontend:
-  #   image: react_frontend
-  #   volumes:
-  #     - react_build:/react/build
+  frontend:
+    image: react_prod_frontend
+    build:
+      context: ./frontend/client
+      args:
+        base_url: http://localhost     
+    volumes:
+      - react_build:/react_app/build
+    command: npm run build 
 
 
   proxy:
@@ -21,10 +26,12 @@ services:
     restart: always
     depends_on:
       - backend
+      - frontend
     ports:
       - 80:8000
     volumes:
-      - static-data:/vol/static
+      # - static-data:/vol/static
+      - react_build:/var/www/react
 
 volumes:
   react_build:

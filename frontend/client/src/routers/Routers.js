@@ -11,8 +11,8 @@ export default function Routers() {
         <div>
            <Router>
                 <Switch>
-                <Route exact path="/"><Redirect to="/home" /></Route>  
-                <DefaultLayoutRoute  exact path="/home" component={Home} />
+                {/* <Route exact path="/"><Redirect to="/home" /></Route>   */}
+                <DefaultLayoutRoute  exact path="/" component={Home} />
                 </Switch>
             </Router>     
         </div>

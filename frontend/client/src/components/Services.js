@@ -1,8 +1,9 @@
 import useFetch from "../hooks/useFetch"
 
 export default function Services() {
-    const {data, isPending, error}= useFetch('http://localhost:8000/api/services/')
-
+   
+    const {data, isPending, error}= useFetch('/api/services/')
+    
     return (
         <div className="container">
    {!isPending  && 
@@ -14,7 +15,7 @@ export default function Services() {
       <div className="row text-center">
          {
          data.map((item , index) =>(
-         <div className="col-md-4" key={item.id}>
+         <div className="col-md-4" key={index}>
             <span className="fa-stack fa-4x">
             <i className="fas fa-circle fa-stack-2x text-primary"></i>
             <i className={ item.class_name }></i>

@@ -4,6 +4,7 @@ import { useState,useEffect } from "react";
 
 
 const useFetch = (url)=>{
+    const BaseUrl = process.env.REACT_APP_URI; //this react_app_uri is define on the docker-compose file
     const [data, setData] = useState( null);
     const [isPending, setIsPending]= useState( true);
     const [error, setError] = useState(null);
@@ -14,7 +15,7 @@ const useFetch = (url)=>{
         // to run the sjon server run the following command npx json-server --watch data/db.json --port 8000
         const abortCont = new AbortController();
 
-        fetch(url, {signal:abortCont.signal})
+        fetch(BaseUrl + url, {signal:abortCont.signal})
               .then(res =>{
                       if(!res.ok){
                         setIsPending(false);

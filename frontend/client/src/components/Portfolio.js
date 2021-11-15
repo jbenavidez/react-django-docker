@@ -1,7 +1,7 @@
 import useFetch from "../hooks/useFetch"
 export default function Portfolio() {
-    const {data, isPending, error}= useFetch('http://localhost:8000/api/portfolio/')
-    console.log('init_portfoliot ....' , data)
+    const {data, isPending, error}= useFetch('/api/portfolio/')
+ 
     return (
         <div className="container">
    <div className="text-center">

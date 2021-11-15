@@ -1,6 +1,6 @@
 import useFetch from "../hooks/useFetch"
 export default function About() {
-    const {data, isPending, error}= useFetch('http://localhost:8000/api/about/')
+    const {data, isPending, error}= useFetch('/api/about/')
     console.log("about init... " , data)
     return (
         <div className="container">
