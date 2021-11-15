@@ -1,15 +1,15 @@
-# Studio Application
-This application  was created using Django,Reat. and Docker 
+# "Studio Company"
+This application display the services, portfolio, about, and team information about the "Studio Company"
 
 
 
 
 # App Concepts
 <ul>
-<li>The back-end of this app is builded on Django. The following endpoints are using by React to pupolate the front-end:</li>
-<li>The front-end of this app is builed on React <li>
+<li>The back-end of this app is builded on Django. Django will prepare the data to server to the front-end. </li>
+<li>The front-end of this app is builed on React, React will digest end-points to display the company information. <li>
 <li> Docker is being used to package the front-end, back-end,nginx  into containers</li>
-<li>The app will display information  about the "Studio Company" </li>
+ 
 </ul>
 
 
@@ -51,7 +51,7 @@ $ docker-compose -f docker-compose-dev.yml  Up
 ![Alt text](frontend/client/src/assets/dev_back.png "Home" )
  
 
- ## Production Enviroment- <b style='color:red'>Run the followings commands  to start the dev-environment</b>
+ ## Production Enviroment- <b style='color:red'>Run the followings commands  to start the prod-environment</b>
 <ul>
 <li>
  
@@ -82,10 +82,10 @@ $ docker-compose -f docker-compose-prod.yml  Up
 
 
 
-## How to run this app
-
-Download the app and Run
-```bash
-$ python manage.py runserver
-```
- 
+####  API end-points:
+<ul>
+<li>/api/services/</li>
+<li>/api/portfolio/</li>
+<li>/api/team/</li>
+<li>/api/about/</li>
+</ul>
