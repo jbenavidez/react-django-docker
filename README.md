@@ -51,10 +51,29 @@ $ docker-compose -f docker-compose-dev.yml  Up
 ![Alt text](frontend/client/src/assets/dev_back.png "Home" )
  
 
+ ## Production Enviroment- <b style='color:red'>Run the followings commands  to start the dev-environment</b>
+<ul>
+<li>
  
+```bash
+$ docker-compose -f docker-compose-prod.yml  build
+```
+</li>
+<li>
+ 
+```bash
+$ docker-compose -f docker-compose-prod.yml  Up
+```
+</li>
+</ul>
 
 
+### On production, the front-end is not longer being serve on port 3000; nginx is being use to manage the traffic
+![Alt text](frontend/client/src/assets/prod_front.png "Home" )
 
+
+### On production, the back-end is not longer being serve on port 8000; nginx is being use to manage the traffic
+![Alt text](frontend/client/src/assets/prod_back.png "Home" )
 
 
 
