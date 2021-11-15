@@ -55,7 +55,7 @@ $ docker-compose -f docker-compose-dev.yml  Up
 # Result
 
 ### The fron-end run on port 3000. Ex: http://localhost:3000/
-![Alt text](src/assets/homepage.png "Home" )
+![Alt text](/frontend/client/src/assets/homepage.png "Home" )
 
  
 
